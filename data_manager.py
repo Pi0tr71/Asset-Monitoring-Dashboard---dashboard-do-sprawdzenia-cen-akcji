@@ -65,6 +65,7 @@ class DataManager:
             df["timestamp"] = pd.to_datetime(pd.to_numeric(df["timestamp"]) + 3600000, unit="ms")
             df[["open", "close", "high", "low", "volume", "co"]] = pd.DataFrame(df["candle"].tolist(), index=df.index)
             df = df.drop(columns=["candle"])
+
         elif "bankier" in url:
             response = requests.get(url)
             data = response.json()

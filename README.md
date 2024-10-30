@@ -1,42 +1,42 @@
 
 # Asset Monitoring Dashboard
 
-** Asset Monitoring Dashboard** is a real-time data dashboard for monitoring cryptocurrency and stock prices, along with precious metals prices. Built using Python, Dash, and several financial APIs, the dashboard fetches and displays updated asset prices, visualized for easy tracking.
+** Asset Monitoring Dashboard** to dashboard do monitorowania cen kryptowalut, akcji oraz cen metali szlachetnych w czasie rzeczywistym. Zbudowany z użyciem Pythona, Dash oraz różnych API finansowych, dashboard pobiera i wyświetla aktualne ceny aktywów, wizualizując je w przystępny sposób.
 
-![Dashboard Preview](images/dashboard.png)
+![Podgląd Dashboardu](images/dashboard.png)
 
-## Features
+## Funkcje
 
-- **Cryptocurrency Tracking:** Displays recent data for Bitcoin (BTC), Ethereum (ETH), and Ripple (XRP) in PLN.
-- **Stock Prices:** Tracks Allegro, Ambra, and ACAUTOGAZ stock prices in real-time.
-- **Precious Metals:** Monitors the values of Gold, Palladium, and Platinum.
-- **Automatic Refresh:** Updates every hour to show current prices.
+- **Śledzenie Kryptowalut:** Wyświetla aktualne dane dla Bitcoin (BTC), Ethereum (ETH) i Ripple (XRP) w PLN.
+- **Ceny Akcji:** Monitoruje ceny akcji Allegro, Ambra i ACAUTOGAZ w czasie rzeczywistym.
+- **Metale Szlachetne:** Śledzi wartości złota, palladu i platyny.
+- **Automatyczne Odświeżanie:** Aktualizuje dane co godzinę, aby pokazać bieżące ceny.
 
-## Project Structure
+## Struktura Projektu
 
-- `main.py`: Initializes and runs the dashboard.
-- `data_manager.py`: Contains the `DataManager` class, which retrieves and processes data from various APIs (Zonda Crypto, GPW, Bankier).
-- `plot_manager.py`: Contains the `PlotManager` class for creating plots for cryptocurrencies, stocks, and metals.
-- `dashboard.py`: Defines the layout and callback functions for real-time updates using Dash.
+- `main.py`: Inicjuje i uruchamia dashboard.
+- `data_manager.py`: Zawiera klasę `DataManager`, która pobiera i przetwarza dane z różnych API (Zonda Crypto, GPW, Bankier).
+- `plot_manager.py`: Zawiera klasę `PlotManager` odpowiedzialną za tworzenie wykresów dla kryptowalut, akcji i metali.
+- `dashboard.py`: Definiuje układ i funkcje aktualizacji danych w czasie rzeczywistym przy użyciu Dash.
 
-## Installation
+## Instalacja
 
-1. **Clone the Repository:**
+1. **Sklonuj Repozytorium:**
    ```bash
    git clone https://github.com/yourusername/BreadcrumbsAsset-Monitoring-Dashboard.git
    cd BreadcrumbsAsset-Monitoring-Dashboard
    ```
 
-2. **Install Dependencies:**
+2. **Zainstaluj Wymagane Biblioteki:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the Dashboard:**
+3. **Uruchom Dashboard:**
    ```bash
    python main.py
    ```
 
-## Usage
+## Użycie
 
-Once started, the dashboard will be accessible at `http://127.0.0.1:8050` in a web browser. Charts for each asset class will refresh every hour.
+Po uruchomieniu, dashboard będzie dostępny pod adresem `http://127.0.0.1:8050` w przeglądarce internetowej. Wykresy dla każdej klasy aktywów będą odświeżane co godzinę.
